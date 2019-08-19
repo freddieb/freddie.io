@@ -1,20 +1,27 @@
-baseurl = "https://freddieb.github.io"
+baseurl = "https://freddieb.github.io/"
 languageCode = "en-us"
 theme = "terminal"
-paginate = 5
 publishDir = "freddieb.github.io"
+paginate = 5
 
 [params]
-  contentTypeName = "post"
-  themeColor = "orange"
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "blue"
+  # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
+  # set theme to full screen width
   fullWidthTheme = false
-  centerTheme = false
+  # center theme with default width
+  centerTheme = true
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
 
 [languages]
   [languages.en]
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
+    title = "Fred Brown"
+    subtitle = "Personal Website"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -22,7 +29,7 @@ publishDir = "freddieb.github.io"
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "Fred Brown"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -31,6 +38,6 @@ publishDir = "freddieb.github.io"
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        identifier = "cv"
+        name = "CV"
+        url = "/freddiebrown_cv.pdf"
